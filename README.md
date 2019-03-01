@@ -10,3 +10,5 @@
 국제 라이센스에 따라 이용할 수 있습니다.
 
 링크제목 지정: [이동](https://github.com/jukyellow/MSAP_DOC/ "링크 제목 ")
+
+링크제목 지정: [크리에이티브 커먼즈 저작자표시-비영리-동일조건변경허락 4.0 국제 라이선스](https://github.com/jukyellow/MSAP_DOC/ "링크 제목 ")
