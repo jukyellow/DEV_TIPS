@@ -9,7 +9,7 @@
 #목차
 
 ### 0. 에버노트 -> 웹으로 쉽게 공유하는 Tip
-> 1. 에버노트 홈페이지 로그인(https://www.evernote.com) -> Note 공유(링크복사) -> Github(iframe삽입불가?) 또는 블로그에서 링크를 제공
+> 1. 현재 에버노트 -> Github에 iframe방식으로 자동으로 에버노트 링크를 삽입하는 방법은 찾지 못함(iframe이 막혀있음), url만 제공가능;
 > 2. postach.io 라는 에버노트 기록시 해당사이트가 제공하는 블로그에 바로 배포해주는 기능활용(단점: 노트북하나만 연결되고, 유로인것?)
 > 3. Marxico(에버노트와 연동되는 markdown 에디터)-> 마크다운작성-> 에버노트에서 View로 연동만가능 -> 에버노트 이메일 내보내기 -> 구글 blogger(이메일을 블로그 post로 연동) (참고: https://hyundonghwang.github.io/2015/11/18/evernote-marxico-blogger-%EC%A1%B0%ED%95%A9/)
 
