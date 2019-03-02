@@ -9,8 +9,9 @@
 #목차
 
 ### 0. 에버노트 -> 웹으로 쉽게 공유하는 Tip
-> 1. 에버노트 홈페이지 로그인(https://www.evernote.com) -> Note 공유(링크복사) -> Github 또는 블로그에서 링크를 제공
+> 1. 에버노트 홈페이지 로그인(https://www.evernote.com) -> Note 공유(링크복사) -> Github(iframe삽입불가?) 또는 블로그에서 링크를 제공
 > 2. postach.io 라는 에버노트 기록시 해당사이트가 제공하는 블로그에 바로 배포해주는 기능활용(단점: 노트북하나만 연결되고, 유로인것?)
+> 3. Marxico(에버노트와 연동되는 markdown 에디터)-> 마크다운작성-> 에버노트에서 View로 연동만가능 -> 에버노트 이메일 내보내기 -> 구글 blogger(이메일을 블로그 post로 연동) (참고: https://hyundonghwang.github.io/2015/11/18/evernote-marxico-blogger-%EC%A1%B0%ED%95%A9/)
 
 ### 1. [이클립스 & maven & 톰캣서버 환경세팅](https://github.com/jukyellow/DEV_TIPS/blob/master/01.%20%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%20%26%20maven%20%26%20%ED%86%B0%EC%BA%A3%EC%84%9C%EB%B2%84%20%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85.md "이클립스 & maven & 톰캣서버 환경세팅")
 
