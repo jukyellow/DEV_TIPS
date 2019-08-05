@@ -8,7 +8,10 @@
 
 ## [ FrondEnd ]
 
-#### 1. [Http기반의 웹 application 메커니즘 이해 및 개발](https://github.com/jukyellow/Dev-Tips/blob/master/03.FrondEnd.md "Http기반의 웹 application 메커니즘 이해 및 개발")
+#### 1. [Http기반의 웹 application 메커니즘 이해 및 개발](https://github.com/jukyellow/Dev-Tips/blob/master/03.FrondEnd.md "Http기반의 웹 application 메커니즘 이해 및 개발")  
+
+#### 2. [크롬 디버깅 ](https://github.com/jukyellow/dev-tips/blob/master/03.FrondEnd.md) 
+
 
 <br>
 
