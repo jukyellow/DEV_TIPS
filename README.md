@@ -21,6 +21,8 @@
 
 #### 2. [Java VM option 및 이클립스 활용 ](https://github.com/jukyellow/dev-tips/blob/master/04_Java_VM_Option_%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%ED%99%9C%EC%9A%A9.md)
 
+#### 3. [형상관리 서버](https://github.com/jukyellow/dev-tips/blob/master/06_%ED%98%95%EC%83%81%EA%B4%80%EB%A6%AC.md)  
+
 
 <br>  
 
