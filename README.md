@@ -8,7 +8,7 @@
 
 ## [ 개발 Tip ]
 
-#### 1. [톰캣 죽은 Thread(Hang) Kill 샘플코드](https://github.com/jukyellow/dev-tips/blob/master/source/RestTomcatThreadKill.java)  
+#### 1. [톰캣 Servlet Request Thread(Hang) Kill 샘플코드](https://github.com/jukyellow/dev-tips/blob/master/source/RestTomcatThreadKill.java)  
 
 
 <br>
