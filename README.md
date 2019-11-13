@@ -6,6 +6,13 @@
 # 목차
 <br>
 
+## [ 개발 Tip ]
+
+#### 1. [톰캣 죽은 Thread(Hang) Kill 샘플코드](https://github.com/jukyellow/dev-tips/blob/master/source/RestTomcatThreadKill.java)  
+
+
+<br>
+
 ## [ FrondEnd ]
 
 #### 1. [Http기반의 웹 application 메커니즘 이해 및 개발](https://github.com/jukyellow/Dev-Tips/blob/master/03.FrondEnd.md "Http기반의 웹 application 메커니즘 이해 및 개발")  
