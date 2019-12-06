@@ -35,7 +35,7 @@
 
 ## [ CI & CD ]
 
-#### 1. [도커,쿠버네티스 활용](https://github.com/jukyellow/DEV_TIPS/blob/master/02.%EB%8F%84%EC%BB%A4%2C%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%99%9C%EC%9A%A9.md "도커,쿠버네티스 활용")
+#### 1. [도커,쿠버네티스 활용-개발환경구축하기](https://github.com/jukyellow/DEV_TIPS/blob/master/02.%EB%8F%84%EC%BB%A4%2C%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%99%9C%EC%9A%A9.md "도커,쿠버네티스 활용")
 
 <br>
 
