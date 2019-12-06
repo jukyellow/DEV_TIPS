@@ -39,6 +39,12 @@
 
 <br>
 
+## [네트워크]
+
+#### 1. [DNS,방화벽,접속차단 분석](https://github.com/jukyellow/dev-tips/blob/master/08_Network.md)
+
+<br>
+
 ## [ 기타 ]
 
 #### 1. [에버노트 -> 웹으로 쉽게 공유하는 Tip](https://github.com/jukyellow/DEV_TIPS/blob/master/00.%EC%97%90%EB%B2%84%EB%85%B8%ED%8A%B8%20-%3E%20%EC%9B%B9%EC%9C%BC%EB%A1%9C%20%EC%89%BD%EA%B2%8C%20%EA%B3%B5%EC%9C%A0%ED%95%98%EB%8A%94%20Tip.md "에버노트 -> 웹으로 쉽게 공유하는 Tip")
