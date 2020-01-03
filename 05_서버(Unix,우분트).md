@@ -13,6 +13,7 @@ $ sudo /etc/init.d/networking restart
 [ ok ] Restarting networking (via systemctl): networking.service.
 ```
 - 참고: https://storycompiler.tistory.com/118[아프니까 개발자다]  
+<br>
 
 ### 2. SWAP 메모리 추가(1G->3G할때)
 - 참고1: https://htst.tistory.com/32
