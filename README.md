@@ -36,8 +36,8 @@
 
 ## [서버 관리]
 
-#### 1. [DNS-로컬 캐시 변경(/etc/host) 및 네트워크 재기동] (https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
-#### 2. [SWAP 메모리 추가] (https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
+#### 1. [DNS-로컬 캐시 변경(/etc/host) 및 네트워크 재기동](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
+#### 2. [SWAP 메모리 추가](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
 
 <br>
 
