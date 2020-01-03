@@ -1,9 +1,6 @@
 # DEV_TIPS(개발하면서 격었던 시행착오 및 해결방법 정리)
 <br>
 
-# 목차
-<br>
-
 ## [ 개발 Tip ]
 
 #### 1. [톰캣 Servlet Request Thread(Hang) Kill 샘플코드](https://github.com/jukyellow/dev-tips/blob/master/source/RestTomcatThreadKill.java)  
