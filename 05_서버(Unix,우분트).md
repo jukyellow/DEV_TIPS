@@ -39,3 +39,16 @@ sudo swapoff -v /swapfile
 sudo swapoff on /swapfile
 sudo rm -r /swapfile
 ```
+
+### 3. Unix서버 변천사
+```
+                               유닉스(커널)
+                                                 SunOS(커널)
+                                                     솔라리스(배포판, 상용)
+             리눅스(커널)
+     리눅스(무료)        레드헷 리눅스?(상용)
+우분투(무료)          페도라      센토스(무료)
+```
+![image](https://user-images.githubusercontent.com/45334819/72932695-9828dd80-3da3-11ea-99b6-4e9f8a50b310.png)  
+
+
