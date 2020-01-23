@@ -39,6 +39,7 @@ sudo swapoff -v /swapfile
 sudo swapoff on /swapfile
 sudo rm -r /swapfile
 ```
+<br>
 
 ### 3. Unix서버 변천사
 ```
@@ -50,6 +51,7 @@ sudo rm -r /swapfile
 우분투(무료)          페도라      센토스(무료)
 ```
 ![image](https://user-images.githubusercontent.com/45334819/72932695-9828dd80-3da3-11ea-99b6-4e9f8a50b310.png)  
+<br>
 
 ### 4. 유닉스 명령어 df, du 
 - 디스크 잔여 용량(disk free)
@@ -69,6 +71,7 @@ sudo rm -r /swapfile
 ```
 ![image](https://user-images.githubusercontent.com/45334819/73023620-48174d00-3e6f-11ea-856d-a4c413b09249.png)
 - 참고: https://ko.wikipedia.org/wiki/Du_(%EC%9C%A0%EB%8B%89%EC%8A%A4)  
+<br>
 
 
 
