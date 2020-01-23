@@ -51,4 +51,24 @@ sudo rm -r /swapfile
 ```
 ![image](https://user-images.githubusercontent.com/45334819/72932695-9828dd80-3da3-11ea-99b6-4e9f8a50b310.png)  
 
+### 4. 유닉스 명령어 df, du 
+- 디스크 잔여 용량(disk free)
+```
+'df .'    : 현재 디렉토리가 포함된 파티션의 남은 공간을 보여준다.
+'df -k'  : Kilobyte 단위로 현재 마운트된 파티션들의 남은 공간을 보여준다.
+'df -h'  : KB, MB, GB
+```
+![image](https://user-images.githubusercontent.com/45334819/73023593-3635aa00-3e6f-11ea-9642-28f6d4131a6f.png)
+
+- 디스크 현재 사용량(disk Usage)
+```
+'du -k'
+'du -h': 현재 디렉토리의 사용용량(사용자가 보기쉬운값으로)
+'du -sh *': 현재 디렉토리 사용용량(하위폴더 포함)
+* 특정용량 이상조회:  $ du -s * | awk '$1 > 100000'
+```
+![image](https://user-images.githubusercontent.com/45334819/73023620-48174d00-3e6f-11ea-856d-a4c413b09249.png)
+- 참고: https://ko.wikipedia.org/wiki/Du_(%EC%9C%A0%EB%8B%89%EC%8A%A4)  
+
+
 
