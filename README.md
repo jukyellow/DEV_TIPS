@@ -40,6 +40,7 @@
 #### 2. [SWAP 메모리 추가](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
 #### 3. [Unix 변천사](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
 #### 4. [Unix 명령어(df,du)](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
+#### 5. [터미널 ssh 접속](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
 
 <br>
 
