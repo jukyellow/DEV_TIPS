@@ -73,5 +73,10 @@ sudo rm -r /swapfile
 - 참고: https://ko.wikipedia.org/wiki/Du_(%EC%9C%A0%EB%8B%89%EC%8A%A4)  
 <br>
 
+### 5. 터미널 ssh 접속
+```
+ssh -p 15022 user@123.123.123.123
+```
+<br>
 
 
