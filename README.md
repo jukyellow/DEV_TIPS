@@ -53,6 +53,8 @@
 ## [DB]
 
 #### 1. [방화벽 Timeout 회피방법과 KeepAlive설정의 이해](https://github.com/jukyellow/dev-tips/blob/master/09_db.md)
+#### 2. [세로열 가로로 merge해서 출력(SYS_CONNECT_BY_PATH, Oracle)](https://github.com/jukyellow/dev-tips/blob/master/09_db.md)
+
 
 <br>
 
