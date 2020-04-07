@@ -79,4 +79,18 @@ ssh -p 15022 user@123.123.123.123
 ```
 <br>
 
+### 6. Shell 특수문자와 2>&1의 의미
+6-1) $! : 최근 백그라운드 작업의 프로세스 번호
+- 활용: 프로세스 pid를 저장해두고 stop shell에서 kill pid로 죽일때 사용가능
+```
+echo $! > $HOME/bin/pid/stop_pid.sh
+```
+6-2) 2>&1 : 2(standard err)를 &1(standard output과 같은 파일로) >(redirect한다) 
+- 설명: 표준에러를 표준출력 파일과 같은 stream(파일)로 write한다.
+```
+ java -Dtype=TEST com.test.java test.cfg > test.out 2>&1 &  
+ #java프로세스를 실행하는데 test.out파일로 표준출력을 write함. 그리고 표준에러도 표준출력과 같은 파일로 쓰고, java프로세스는 백그라운드(&)로 실행 
+ #표준에러를 파일에 쓰도록 했기때문에, 화면(screen)에 Exception내용이 찍히지 않음  
+```
+<br>
 
