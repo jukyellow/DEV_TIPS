@@ -21,7 +21,8 @@
 
 #### 1. [이클립스 & maven & 톰캣서버 환경세팅](https://github.com/jukyellow/DEV_TIPS/blob/master/01.%20%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%20%26%20maven%20%26%20%ED%86%B0%EC%BA%A3%EC%84%9C%EB%B2%84%20%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85.md "이클립스 & maven & 톰캣서버 환경세팅")
 ##### 1-1. [이클립스 Maven 설정](https://github.com/jukyellow/dev-tips/blob/master/01.%20%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%20&%20maven%20&%20%ED%86%B0%EC%BA%A3%EC%84%9C%EB%B2%84%20%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85.md#1maven-%EC%84%A4%EC%A0%95-00_%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-maven%EC%84%A4%EC%A0%95%EC%8B%9C-%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD)
-##### 1-2. [이클립스 톰캣 설정](https://github.com/jukyellow/dev-tips/blob/master/01.%20%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%20%26%20maven%20%26%20%ED%86%B0%EC%BA%A3%EC%84%9C%EB%B2%84%20%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85.md#2%ED%86%B0%EC%BA%A3%EC%84%A4%EC%A0%95)
+##### 1-2. [이클립스 톰캣 Heap메모리 부족해결](https://github.com/jukyellow/dev-tips/blob/master/01.%20%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%20%26%20maven%20%26%20%ED%86%B0%EC%BA%A3%EC%84%9C%EB%B2%84%20%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85.md#2%ED%86%B0%EC%BA%A3%EC%84%A4%EC%A0%95)
+##### 1-3. [이클립스 프로젝트 소스, 한글깨짐 문제해결](https://github.com/jukyellow/dev-tips/blob/master/01.%20%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%20%26%20maven%20%26%20%ED%86%B0%EC%BA%A3%EC%84%9C%EB%B2%84%20%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85.md#3-%ED%95%9C%EA%B8%80%EA%B9%A8%EC%A7%90-%EB%AC%B8%EC%A0%9C)
 ##### 1-4. [이클립스 JDK 설정 및 Jar 클래스파일 컴파일 버전 확인](https://github.com/jukyellow/dev-tips/blob/master/01.%20%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%20&%20maven%20&%20%ED%86%B0%EC%BA%A3%EC%84%9C%EB%B2%84%20%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85.md#4-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-jdk-%EC%84%A4%EC%A0%95-%EB%B0%8F-jar-class%ED%8C%8C%EC%9D%BC%EC%9D%98-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EB%B2%84%EC%A0%84%ED%99%95%EC%9D%B8)
 
 #### 2. [Java VM option 및 이클립스 활용 ](https://github.com/jukyellow/dev-tips/blob/master/04_Java_VM_Option_%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%ED%99%9C%EC%9A%A9.md)
@@ -44,6 +45,7 @@
 #### 3. [Unix 변천사](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
 #### 4. [Unix 명령어(df,du)](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
 #### 5. [터미널 ssh 접속](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
+#### 6. [Shell 특수문자와 2>&1의 의미](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md#6-shell-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90%EC%99%80-21%EC%9D%98-%EC%9D%98%EB%AF%B8)
 
 <br>
 
