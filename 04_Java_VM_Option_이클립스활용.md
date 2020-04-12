@@ -50,18 +50,3 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom", "-Dspring.profiles
 * 로컬에서 이클립스로 실행시(첨부파일 참고)  
 
 <br>
-
-### 3. Java 프로세스 안전하게 종료시키기
-- 서버 프로그램의 경우 할당한 자원이나 상태 정보등을 서버 종료시에 올바르게 처리해주어야 하는데, 강제 종료시 이런 것들을 올바르게 처리할 수 없는 문제가 발생한다.  
-- 자바는 이런 문제를 방지하기 위해서 1.3 버전부터 '셧다운 후크(Shutdown Hook)'라는 기능을 도입하였다. 셧다운 후크는 JVM이 셧다운될 때에 셧다운 이벤트를 가로채서 어떤 코드를 수행한 후 최종적으로 셧다운 되도록 한다. 참고로, JVM은 다음과 같은 상황인 경우 셧다운 이벤트를 발생시킨다.  
-> 정상적으로 종료될 때. 예) 마지막 논데몬 쓰레드가 종료되었거나 System.exit()가 호출될 때.  
-> JVM이 강제적으로 종료될 때. 예) 시스템 셧다운, 사용자 로그아웃, Ctrl+C 누름  
-```
-Runtime.getRuntime().addShutdownHook(new Thread(instance));
-
-@Override
-public void run() {
-  //stop 처리...
-}
-```
-- 샘플(spring framework) 소스: https://github.com/jukyellow/dev-tips/tree/master/source/java-stop-signal  
