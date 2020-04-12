@@ -13,5 +13,84 @@ $ sudo /etc/init.d/networking restart
 [ ok ] Restarting networking (via systemctl): networking.service.
 ```
 - 참고: https://storycompiler.tistory.com/118[아프니까 개발자다]  
+<br>
 
+### 2. SWAP 메모리 추가(1G->3G할때)
+- 참고1: https://htst.tistory.com/32
+- 크게 두가지 방식 partition(디스크 할당) or SWAPFILE(swap용 big file추가) 처리가 있음
+- partition이 존재할때 swapfile을 추가하여 간단하게 스왑메모리를 추가할수 있음.
+- 참고2: - https://steps4great.tistory.com/7
+--swapfile 만들기
+```
+ sudo fallocate -l 2G /swapfile  → swapfile 생성
+ sudo chmod 600 /swapfile → root 사용자만 사용할 수 있도록 권한 변경
+ sudo mkswap /swapfile  → 스왑메모리로 변경
+ sudo swapon /swapfile  → 스왑메모리 활성화
+```
+--재부팅시 swap메모리 남아있게 설정
+```
+sudo vi /etc/fstab
+입력내용 → /swapfile swap swap default 0 0
+```
+--스왑메모리 제거
+```
+sudo vi /etc/fstab → 자동마운트 내용 제거 및 주석처리
+sudo swapoff -v /swapfile
+sudo swapoff on /swapfile
+sudo rm -r /swapfile
+```
+<br>
+
+### 3. Unix서버 변천사
+```
+                               유닉스(커널)
+                                                 SunOS(커널)
+                                                     솔라리스(배포판, 상용)
+             리눅스(커널)
+     리눅스(무료)        레드헷 리눅스?(상용)
+우분투(무료)          페도라      센토스(무료)
+```
+![image](https://user-images.githubusercontent.com/45334819/72932695-9828dd80-3da3-11ea-99b6-4e9f8a50b310.png)  
+<br>
+
+### 4. 유닉스 명령어 df, du 
+- 디스크 잔여 용량(disk free)
+```
+'df .'    : 현재 디렉토리가 포함된 파티션의 남은 공간을 보여준다.
+'df -k'  : Kilobyte 단위로 현재 마운트된 파티션들의 남은 공간을 보여준다.
+'df -h'  : KB, MB, GB
+```
+![image](https://user-images.githubusercontent.com/45334819/73023593-3635aa00-3e6f-11ea-9642-28f6d4131a6f.png)
+
+- 디스크 현재 사용량(disk Usage)
+```
+'du -k'
+'du -h': 현재 디렉토리의 사용용량(사용자가 보기쉬운값으로)
+'du -sh *': 현재 디렉토리 사용용량(하위폴더 포함)
+* 특정용량 이상조회:  $ du -s * | awk '$1 > 100000'
+```
+![image](https://user-images.githubusercontent.com/45334819/73023620-48174d00-3e6f-11ea-856d-a4c413b09249.png)
+- 참고: https://ko.wikipedia.org/wiki/Du_(%EC%9C%A0%EB%8B%89%EC%8A%A4)  
+<br>
+
+### 5. 터미널 ssh 접속
+```
+ssh -p 15022 user@123.123.123.123
+```
+<br>
+
+### 6. Shell 특수문자와 2>&1의 의미
+6-1) $! : 최근 백그라운드 작업의 프로세스 번호
+- 활용: 프로세스 pid를 저장해두고 stop shell에서 kill pid로 죽일때 사용가능
+```
+echo $! > $HOME/bin/pid/stop_pid.sh
+```
+6-2) 2>&1 : 2(standard err)를 &1(standard output과 같은 파일로) >(redirect한다) 
+- 설명: 표준에러를 표준출력 파일과 같은 stream(파일)로 write한다.
+```
+ java -Dtype=TEST com.test.java test.cfg > test.out 2>&1 &  
+ #java프로세스를 실행하는데 test.out파일로 표준출력을 write함. 그리고 표준에러도 표준출력과 같은 파일로 쓰고, java프로세스는 백그라운드(&)로 실행 
+ #표준에러를 파일에 쓰도록 했기때문에, 화면(screen)에 Exception내용이 찍히지 않음  
+```
+<br>
 
