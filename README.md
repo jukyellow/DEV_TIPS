@@ -46,6 +46,8 @@
 #### 4. [Unix 명령어(df,du)](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
 #### 5. [터미널 ssh 접속](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md)
 #### 6. [Shell 특수문자와 2>&1의 의미](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md#6-shell-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90%EC%99%80-21%EC%9D%98-%EC%9D%98%EB%AF%B8)
+#### 6. [생성시간 기준 파일 검색](https://github.com/jukyellow/dev-tips/blob/master/05_%EC%84%9C%EB%B2%84(Unix%2C%EC%9A%B0%EB%B6%84%ED%8A%B8).md#7-%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1%EC%8B%9C%EA%B0%84-%EA%B8%B0%EC%A4%80%EC%9C%BC%EB%A1%9C-%EC%B0%BE%EA%B8%B0%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0)
+
 
 <br>
 
