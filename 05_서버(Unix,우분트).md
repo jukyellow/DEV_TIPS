@@ -94,3 +94,22 @@ echo $! > $HOME/bin/pid/stop_pid.sh
 ```
 <br>
 
+### 7. 파일 생성시간 기준으로 찾기/삭제하기
+- 참고: https://joont.tistory.com/129
+- 방법: find의 -newer 옵션(지정한 파일의 날짜보다 이후에 수정된 파일을 찾아주는 옵션) 활용  
+```
+1) touch -t 20160501 begin  (우분투는 yyyyMMddhh24mi 까지 입력해야 됨?)
+2-1) find . -newer begin -print
+> begin 파일보다 이후에 수정된 파일을 검색합니다. 즉, 2016년 5월 1일 이후의 파일을 검색하게 되는것이죠.
+2-2) find . ! -newer begin -print
+> find의 부정연산자를 사용하면 2016년 5월 1일 이전의 파일도 검색 가능합니다.
+2-3) touch -t 20160530 end, find . -newer begin -a ! -newer end -print
+>2016년 5월 1일부터 2016년 5월 30일 사이에 수정된 파일을 검색하는 방법입니다.
+3) find . -newer begin -a ! -newer end | wc -l
+> 개수 구하기
+4) find . -newer begin -a ! -newer end -exec rm -f {} \;
+> 삭제하기 (*주의: 반드시 . 현재디렉토리 기준으로 찾기바람, /를 쓰면 최상위 경로가 됨)  
+```
+
+<br>  
+
