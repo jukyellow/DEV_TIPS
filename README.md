@@ -5,6 +5,7 @@
 
 #### 1. [톰캣 Servlet Request Thread(Hang) Kill 샘플코드](https://github.com/jukyellow/dev-tips/blob/master/source/RestTomcatThreadKill.java)  
 #### 2. [테스트-Jmeter부하테스트](https://github.com/jukyellow/dev-tips/blob/master/07_%ED%85%8C%EC%8A%A4%ED%8A%B8.md)
+#### 3. [Java Class 컴파일 버전확인](https://github.com/jukyellow/dev-tips/blob/master/04_Java_VM_Option_%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%ED%99%9C%EC%9A%A9.md#3-jar%ED%8C%8C%EC%9D%BC-class-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EB%B2%84%EC%A0%84%ED%99%95%EC%9D%B8)
  
 <br>
 
