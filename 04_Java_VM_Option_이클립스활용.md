@@ -50,3 +50,12 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom", "-Dspring.profiles
 * 로컬에서 이클립스로 실행시(첨부파일 참고)  
 
 <br>
+<br>
+
+### 3. Jar파일 class 컴파일 버전확인
+1. jar 파일 압축 풀기 : jar -xvf 파일명.jar)
+2. 클래스 파일 버전확인: javap -verbose 클래스파일명(.class제외) | grep "version"
+> javap -verbose CargoENVGenerator | grep "version"
+
+<br>
+
