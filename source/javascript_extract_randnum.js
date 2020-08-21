@@ -1,4 +1,4 @@
-```javascript
+
 //번호 추출기
 //MAX_NUM: 추천 인원
 //MAX_ITER: 한번에 추출하는 숫자
@@ -25,4 +25,4 @@ Seq:3 ,Num:20
 Seq:4 ,Num:141
 Seq:5 ,Num:31
 */
-```
+
