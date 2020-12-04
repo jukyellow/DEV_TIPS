@@ -81,7 +81,7 @@ Logger logger = Logger.getLogger("CustomLogger");
 - jdbc.audit : ResultSet을 제외한 모든 JDBC 호출 정보를 로그로 남긴다. 많은 양의 로그가 생성되므로 특별히 JDBC 문제를 추적해야 할 필요가 있는 경우를 제외하고는 사용을 권장하지 않는다. 
 - jdbc.resultset : ResultSet을 포함한 모든 JDBC 호출 정보를 로그로 남기므로 매우 방대한 양의 로그가 생성된다. 
 - jdbc.resultsettable : SQL 결과 조회된 데이터의 table을 로그로 남긴다.
-```
+``` xml
 <logger name="jdbc.sqlonly" level="OFF"/>
 <logger name="jdbc.sqltiming" level="DEBUG"/>
 <logger name="jdbc.audit" level="OFF"/>
@@ -89,4 +89,11 @@ Logger logger = Logger.getLogger("CustomLogger");
 <logger name="jdbc.resultsettable" level="DEBUG"/>
 <logger name="jdbc.connection" level="OFF"/>
 ```
-
+- maven dependency  
+``` xml
+<dependency>
+    <groupId>org.bgee.log4jdbc-log4j2</groupId>
+    <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+    <version>1.16</version>
+</dependency>   
+```
