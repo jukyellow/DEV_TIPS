@@ -56,6 +56,37 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom", "-Dspring.profiles
 1. jar 파일 압축 풀기 : jar -xvf 파일명.jar)
 2. 클래스 파일 버전확인: javap -verbose 클래스파일명(.class제외) | grep "version"
 > javap -verbose CargoENVGenerator | grep "version"
-
 <br>
+
+### 4. Spring Log4j Logger 및 log4jdbc (정리중...)
+#### 4.1 Log4j
+- 생성 방법1: 커스텀 패키지 name 사용, 하위 패키지 전체에 로깅 적용
+```
+Logger logger = Logger.getLogger(com.company);
+```
+- 생성 방법2: 문자열 name 사용, 선언한 해당 Logger 인스턴스로 출력
+```
+Logger logger = Logger.getLogger("CustomLogger");
+```
+- 생성 방법3: thirdParty 패키지 사용, 해당 패키지에서 발생하는 로그 남김
+```
+<logger name="org.springframework.core">
+    <level value="info" />
+</logger>
+```
+#### 4.2 Log4jdbc
+> 사전에 정의된 다양한 옵션 사용가능(조회 paramter 및 조회결과를 테이블 형태로도 출력하는 옵션 존재)  
+- jdbc.sqlonly : SQL문만을 로그로 남기며, PreparedStatement일 경우 관련된 argument 값으로 대체된 SQL문이 보여진다. 
+- jdbc.sqltiming : SQL문과 해당 SQL을 실행시키는데 수행된 시간 정보(milliseconds)를 포함한다. 
+- jdbc.audit : ResultSet을 제외한 모든 JDBC 호출 정보를 로그로 남긴다. 많은 양의 로그가 생성되므로 특별히 JDBC 문제를 추적해야 할 필요가 있는 경우를 제외하고는 사용을 권장하지 않는다. 
+- jdbc.resultset : ResultSet을 포함한 모든 JDBC 호출 정보를 로그로 남기므로 매우 방대한 양의 로그가 생성된다. 
+- jdbc.resultsettable : SQL 결과 조회된 데이터의 table을 로그로 남긴다.
+```
+<logger name="jdbc.sqlonly" level="OFF"/>
+<logger name="jdbc.sqltiming" level="DEBUG"/>
+<logger name="jdbc.audit" level="OFF"/>
+<logger name="jdbc.resultset" level="OFF"/>
+<logger name="jdbc.resultsettable" level="DEBUG"/>
+<logger name="jdbc.connection" level="OFF"/>
+```
 
