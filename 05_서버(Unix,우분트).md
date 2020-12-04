@@ -110,6 +110,43 @@ echo $! > $HOME/bin/pid/stop_pid.sh
 4) find . -newer begin -a ! -newer end -exec rm -f {} \;
 > 삭제하기 (*주의: 반드시 . 현재디렉토리 기준으로 찾기바람, /를 쓰면 최상위 경로가 됨)  
 ```
-
 <br>  
+
+### 8. 웹서버 설정(Sun ONE)과 WAS Timeout설정
+#### 8.1 설정파일
+- /opt/sunone61/https-xxx/config/object.conf : URI 패턴을 등록하고 해당하는 요청일때 필터링 기능 동작  
+``` xml
+<Object name="weblogic_do" ppath="*.do">
+ Service fn="wl_proxy" WebLogicCluster="xxx.xxx.xxx.xxx:9820,xxx.xxx.xxx.xxx:9820" DynamicServerList="OFF" Idempotent="ON" WLIOTimeoutSecs="3600" KeepAliveEnabled="false" CookieName="NLPS_ADMIN_JSESSIONID"
+</Object>
+```
+- /opt/sunone61/https-xxx/config/server.xml : 웹서버 포트등 설정  
+#### 8.2 설정파일(object.conf) 옵션 설명  
+- WLIOTimeoutSecs (HungServerRecoverSecs) : WLS로 request를 보내고 response를 받기 위해 대기하는 시간, default 300초  
+- KeepAliveEnabled : Plug-in과 WLS의 연결을 지속할 것인지 여부를 결정  
+> client request를 처리한 후 WLS와의 연결을 닫아버릴 것인지 연결된 상태로 두었다가 다음 요청이 들어왔을 때 재사용할 것인지 설정  
+> Default => true(Netscape and Microsoft IIS) & ON (Apache)  
+- Idempotent (ON/OFF) : 
+> WebLogic서버로 부터 request전송시 에러가 발생하거나, 서버로부터 결과를 기다리는 중에 위에 정의된 WLIOTimeoutSecs 시간 초과되어서 에러 발생시 요청을 다시 보낼 것인가를 지정  
+> 서버와 연결은 되었는데 그 이후에 에러가 발생 하였을 경우 해당 옵션이 ON이면 다시 연결을 시도하고, 요청을 보내게 되므로 중복 요청의 가능성이 있다. OFF권장  
+#### 8.3 WAS(web application server) Timeout 설정  
+- 세션 Timeout 설정: 
+1) 웹콘솔: 배치->nlps->구성 >  "세션시간초과" 항목
+2) 서버 xml파일
+- web.xml : /WEB-INF 하위, web.xml의 경우에 단위는 분이다.  
+``` xml
+<session-config>
+   <session-timeout>60</session-timeout>
+</session-config>
+```
+- weblogic.xml : 단위는 초이다.  
+``` xml 
+<session-descriptor>
+   <session-param>
+      <param-name>TimeoutSecs</param-name>
+      <param-value>3600</param-value>
+   </session-param>
+</session-descriptor>
+```
+
 
