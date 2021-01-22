@@ -38,6 +38,7 @@
 
 #### 1. [도커,쿠버네티스 활용-개발환경구축하기](https://github.com/jukyellow/DEV_TIPS/blob/master/02.%EB%8F%84%EC%BB%A4%2C%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%99%9C%EC%9A%A9.md "도커,쿠버네티스 활용")
 #### 2. [Windows에 도커 설치하기](https://github.com/jukyellow/dev-tips/blob/master/02.%EB%8F%84%EC%BB%A4,%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%99%9C%EC%9A%A9.md#2-windows-10-home%EC%97%90-docker-for-desktopwin-10-pro%EC%9A%A9-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0)
+#### 3. [docker-dangling-image-remove](https://github.com/jukyellow/dev-tips/blob/master/02.%EB%8F%84%EC%BB%A4,%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20%ED%99%9C%EC%9A%A9.md#3-docker-dangling-image-remove)
 <br>
 
 ## [서버 관리]
