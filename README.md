@@ -83,7 +83,7 @@
 
 ## [Markdown/PPT 작성법]
 
-#### 1. Marp를 이용한 Markdown 슬라이드 작성법()
+#### 1. Marp를 이용한 Markdown 슬라이드 작성법(https://github.com/jukyellow/dev-tips/blob/master/marp/test.md)
 
 <br>
 <br>
